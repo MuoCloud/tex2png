@@ -1,12 +1,11 @@
 {
-  "name": "node-latex-api",
+  "name": "tex2png",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/MuoCloud/node-latex-api.git",
+  "repository": "https://github.com/MuoCloud/tex2png.git",
   "author": "Aego <aego.yu@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "helmet": "^3.21.3",
     "mathjax-full": "^3.0.1",
@@ -25,6 +24,6 @@
   "scripts": {
     "build": "tsc",
     "lintfix": "tslint --fix --project .",
-    "start": "pm2-runtime start dist/src"
+    "start": "pm2-runtime start dist"
   }
 }
