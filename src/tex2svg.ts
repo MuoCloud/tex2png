@@ -1,7 +1,9 @@
 import mjAPI from 'mathjax-node'
 
 mjAPI.config({
-  MathJax: {}
+  MathJax: {
+    displayAlign: 'left'
+  }
 })
 
 mjAPI.start()
@@ -67,7 +69,7 @@ const tex2svg = (
   mjAPI.typeset({
     ex: EX_SIZE,
     math: optimizeLineBreak(math, width),
-    format: 'inline-TeX',
+    format: 'TeX',
     svg: true,
     width,
     linebreaks: true
